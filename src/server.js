@@ -18,7 +18,7 @@ const syncTables = () => {
 app.use(bookRouter);
 
 app.get("/health", (req, res) => 
-res.status(200).json({ message: "API is working" }))
+res.status(200).json({ message: "API is working" }));
 
 app.listen(port, () => {
     syncTables();
